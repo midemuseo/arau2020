@@ -1,0 +1,15 @@
+.wrapper {
+    align-items: center;
+    background: #000;
+    border-radius: 0px;
+    display: flex;
+    font-family: Raleway, sans-serif;
+    height: 130px;
+    width: 100%;
+}
+.sin_adorno{
+    text-align: left;
+}
+.cursive{
+    font-family: 'Barlow', sans-serif;
+}

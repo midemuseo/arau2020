@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div id="menus" class="menus menu-visible">
+        <div class="menu">
+            <app-menu></app-menu>
+        </div>
+    </div>
+    <div id="contenido" class="bc-body-7 contenido contenido-small">
+        <app-emotions (emotions)="setEmotions($event)" [emociones]="emotions"></app-emotions>
+        <router-outlet></router-outlet>
+        <app-modal-resultados [emociones]="emotions"></app-modal-resultados>
+    </div>
+
+</div>
+<app-footer></app-footer>

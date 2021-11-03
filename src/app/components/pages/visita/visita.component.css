@@ -1,0 +1,343 @@
+.wrapper {
+    align-items: center;
+    background: #000;
+    border-radius: 0px;
+    display: flex;
+    font-family: Raleway, sans-serif;
+    height: 130px;
+    width: 100%;
+}
+
+.sin_adorno {
+    text-align: left;
+}
+
+.carrusel_diferente .swiper-pagination-fraction {
+    display: none;
+}
+
+.contenido_adorno p {
+    font-size: 24px;
+}
+
+.contenido_adorno .btn {
+    border-radius: 0px;
+    background: #FFFFFF;
+    padding: 15px 20px;
+    font-family: 'Barlow-Semibold';
+    font-size: 20px;
+}
+
+.contenido_adorno .btn:hover {
+    color: #FFFFFF;
+}
+
+.botones {
+    padding: 10px 0px;
+}
+
+.principal {
+    border: 0px;
+    border-radius: 0px;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    font-family: 'Barlow-Semibold';
+    font-size: 20px;
+}
+
+.contenedor-entradas {
+    margin: 0px -15px;
+    padding-bottom: 25px;
+}
+
+.caja-entrada {
+    margin: 130px 0px 0px 1px;
+    position: relative;
+}
+
+.caja-entrada .card {
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.card-header:first-child {
+    border-radius: calc(10px - 1px) calc(10px - 1px) 0 0;
+}
+
+.caja-entrada .card .card-header {
+    height: 110px;
+    display: table;
+}
+
+.caja-entrada .card .card-header h3 {
+    font-family: 'Barlow-Bold';
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    height: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.caja-entrada .card .card-body {
+    height: 175px;
+    display: table;
+}
+
+.caja-entrada .card .card-body .tarifa {
+    height: auto;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.caja-entrada .card h1 {
+    font-family: 'Barlow-Bold';
+    font-size: 36px;
+}
+
+.caja-entrada .card p {
+    font-family: 'Barlow-Regular';
+    font-size: 18px;
+    color: #78787A;
+}
+
+.caja-entrada .card .text-condicion {
+    font-family: 'Barlow-Semibold';
+}
+
+.img {
+    position: absolute;
+    top: -115px;
+}
+
+.caja .header {
+    height: 250px;
+    display: table;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.caja .header .titulo {
+    width: 100%;
+    color: #FFFFFF;
+    font-family: 'Barlow-Semibold';
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    top: 112px;
+    padding: 10px;
+}
+
+.caja .body {
+    height: 630px;
+    background-color: #FFFFFF;
+    font-family: 'Barlow-Regular';
+    font-size: 16px;
+    color: #000;
+    box-shadow: inset 2px 0px 3px rgb(0 0 0 / 30%), inset 0px 0px 0px rgb(255 255 255 / 20%);
+    padding: 10px 20px;
+}
+
+.caja .texto {
+    padding: 20px;
+}
+
+.caja .item {
+    width: 100%;
+    display: block;
+    padding: 10px 20px;
+}
+
+.caja .item .text {
+    color: #bdb2a5;
+    font-family: 'Barlow-Semibold';
+    font-size: 16px;
+}
+
+.caja .item .icon {
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.caja .item span {
+    margin-left: 5px;
+}
+.caja .logo{
+    width: 100px;
+    height: auto;
+    padding-top: 15px;
+    margin-left: 18px;
+}
+.caja .logo-lg{
+    width: 150px;
+}
+.img-logo {
+    text-align: center;
+    padding: 1rem 0rem .5rem 0rem;
+}
+
+.texto-link {
+    padding: 1rem 0rem .5rem 0rem;
+    font-family: 'Barlow-Semibold';
+    font-size: 24px;
+}
+
+.texto-link a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.contenedor-contacto {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: -30px;
+}
+
+.contenedor-contacto .botones a {
+    margin: 10px;
+}
+
+.contenedor-contacto .botones .principal {
+    padding: 20px 20px!important;
+}
+
+.contenedor-contacto .botones .blanco {
+    border: solid 2px #FFFFFF;
+    border-radius: 0px;
+    color: #FFFFFF;
+    padding: 20px 20px;
+    font-family: 'Barlow-Semibold';
+    font-size: 20px;
+}
+
+.contenedor-contacto .botones .btn {
+    width: 275px;
+}
+
+.contenedor-contacto .botones .btn .icono {
+    width: 20%;
+    float: left;
+}
+
+.contenedor-contacto .botones .btn .texto {
+    width: 80%;
+    float: left;
+    color: #FFFFFF;
+    font-family: 'Barlow-bold';
+    font-size: 24px;
+}
+
+.botontrasnparente {
+    width: 70%;
+}
+
+.informes {
+    padding: 20px 10px;
+    height: auto;
+}
+
+.informe {
+    width: 100%;
+    margin: 0px 0px 20px;
+    height: 70px;
+}
+
+.informe .icono {
+    width: 10%;
+    vertical-align: middle;
+    float: left;
+}
+
+.informe .texto {
+    width: 90%;
+    padding-left: 5px;
+    color: #FFFFFF;
+    font-family: 'Barlow-Regular';
+    font-size: 24px;
+    float: left;
+}
+
+.contenedor_imagen img {
+    max-width: 100%;
+}
+
+.contenido_expo {
+    padding-left: 30px;
+}
+
+@media all and (max-width:992px) {
+    .contenedor-contacto {
+        margin-top: 8rem;
+    }
+    .contenedor_imagen {
+        text-align: center;
+        margin: 0 0 40px;
+    }
+    .contenido_expo {
+        padding-left: 0;
+    }
+    .caja .texto {
+        padding: 20px 0px;
+    }
+    
+    .caja .item {
+        padding: 10px 0px;
+    }
+}
+
+@media all and (max-width:768px) {
+    .texto-link {
+        text-align: center;
+    }
+}
+
+@media all and (max-width:560px) {
+    .botontrasnparente {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:480px) {
+    .botontrasnparente {
+        margin: 20px 0 40px;
+        display: inline-block;
+    }
+    .texto-link {
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+    .contenedor-contacto .botones a {
+        width: 100%;
+        display: inline-block;
+    }
+    .contenedor-contacto .botones .btn {
+        width: 100%;
+        padding: 0;
+    }
+    .caja .header .titulo {
+        top: 120px;
+    }
+    .caja .body {
+        padding: 10px 5px;
+        font-size: 15px;
+    }
+    .caja .texto,
+    .caja .item {
+        padding: 5px 10px;
+    }
+    .contenedor-cartelera .p-5 {
+        padding: 2rem 1rem !important;
+    }
+    .contenedor-cartelera .col-10,
+    .contenedor-cartelera .col-2 {
+        max-width: 100%;
+        flex: auto;
+    }
+}

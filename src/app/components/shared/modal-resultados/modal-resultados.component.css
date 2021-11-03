@@ -1,0 +1,25 @@
+.modal-header{
+    border-bottom: 0px;
+    padding: 1rem 1rem 0;
+}
+.modal-body{
+    padding: 0rem 1rem 1rem;
+}
+.modal-content{
+    border-radius: 0px;
+    background-color: rgba(0,0,0,.6);
+}
+.close{
+    color:#FFF
+}
+h1{
+    color: #FFF;
+    font-family: 'Barlow-Bold';
+    font-size: 48px;
+}
+h2{
+    color: #FFF;
+    font-family: 'Barlow-Regular';
+    font-size: 22px;
+    text-align: left;
+}

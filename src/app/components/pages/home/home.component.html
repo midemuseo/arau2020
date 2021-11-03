@@ -1,0 +1,50 @@
+<div class="animate__animated animate__fadeIn">
+    <div class="row">
+        <div class="col-md-9 carrusel_may carrusel_home">
+            <slider-principal [imagenesArr]="Sliders"></slider-principal>
+        </div>
+        <div class="col-md-3 imagenDerecha">
+            <div class="imagenCentrada imagenCentradaHome"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5 order-2 order-md-1">
+            <img class="img-fluid" src="assets/img/home/crematorio-san-isidro.jpg" alt="Crematorio San Isidro">
+        </div>
+        <div class="col-lg-7 contenedor order-1 order-md-2">
+            <div class="caja pb-4">
+                <h1>LA 1RA GRAN EXPOSICIÓN FOTOGRÁFICA DEL 2021, SOLO EN EL MIDE</h1>
+                <p class="small">Descubre a través de <strong>87 fotografías</strong> de la Ciudad de México cómo ha sido la vida durante la pandemia.</p>
+            </div>
+            <div class="ubicacion">
+                <div class="row flotante wow animate__animated animate__fadeInUp">
+                    <div class="col-md-6">
+                        <p class="description">Desde</p>
+                        <p class="dato">29 de Octubre del 2021</p>
+                        <p class="dato"><strong>¡CORTA TEMPORADA!</strong></p>
+                        <!--<p class="description">Hasta el</p>
+                        <p class="dato">29 de Mayo del 2022</p>-->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pin"></div>
+                        <p class="description">Visítala en </p>
+                        <p class="dato"> Tacuba 17 Centro Histórico, <br>Ciudad de México.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="botones row">
+                <div class="col-lg-9 col-md-10 py-5 order-2 order-sm-1">
+                    <button (click)="IraVisita()" type="button" class="btn principal">
+                        PREPARA TU VISITA
+                    </button>
+                </div>
+                <!-- <div class="col-md-5 py-5 fn order-1 order-sm-2">
+                    <button type="button" class="btn secundario">
+                        <div class="linea"></div>
+                        CORTA TEMPORADA
+                    </button> 
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
