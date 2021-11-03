@@ -1,0 +1,10 @@
+.btn-menu{
+    width: 60px;
+    height: 47px;
+    position: absolute;
+    top: 25px;
+    box-shadow: 1px 2px 3px rgb(0 0 0 / 58%);
+    background-color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+}

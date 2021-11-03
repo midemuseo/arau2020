@@ -1,0 +1,134 @@
+.contenedor {
+    padding: 5rem 5rem 0rem;
+}
+
+h1 {
+    font-family: 'Barlow-Extrabold';
+    font-size: 48px;
+}
+
+.small {
+    font-family: 'Barlow-Regular';
+    font-size: 24px;
+}
+
+.description {
+    font-family: 'Barlow-regular';
+    font-size: 24px;
+}
+
+p {
+    font-family: 'Barlow-Semibold';
+    font-size: 24px;
+}
+
+.ubicacion {
+    height: 200px;
+    position: relative;
+}
+
+.pin {
+    width: 19px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.flotante {
+    position: absolute;
+    background-color: #FFF;
+    width: 132%;
+    left: -21%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 11%;
+    z-index: 1;
+}
+.flotante p{
+    margin-bottom: 0rem;
+}
+.botones .btn {
+    color: #FFF;
+    font-family: 'Barlow-Bold';
+    font-size: 36px;
+    text-align: center;
+    border-radius: 0px;
+}
+
+.botones .linea {
+    position: relative;
+    top: 0;
+    width: 59px;
+}
+.dato strong{
+    font-family: 'Barlow-Bold';
+    font-size: 32px;
+}
+@media (max-width: 1200px) {
+    .ubicacion {
+        height: 280px;
+    }
+}
+
+@media (max-width: 1000px) {
+    p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 30px;
+    }
+    .small {
+        font-size: 18px;
+    }
+    p {
+        font-size: 24px;
+    }
+    .ubicacion {
+        position: unset;
+        height: auto;
+    }
+    .ubicacion .pt-5 {
+        padding-top: 1rem !important;
+    }
+    .flotante {
+        position: unset;
+        width: 100%;
+        padding-left: unset;
+        margin: 0 auto;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .py-5 {
+        padding-top: 1rem !important;
+        text-align: center;
+    }
+    .fn {
+        padding-bottom: 3rem !important;
+    }
+    .pin{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 3rem 2rem 0rem;
+    }
+    .botones .principal {
+        line-height: 1.3;
+        font-size: 24px;
+    }
+    .botones .secundario {
+        text-align: left;
+        line-height: 1.3;
+    }
+    .fn {
+        padding-bottom: 1rem !important;
+    }
+    .py-5 {
+        padding-top: 1rem !important;
+    }
+}

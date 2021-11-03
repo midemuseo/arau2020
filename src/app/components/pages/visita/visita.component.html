@@ -1,0 +1,290 @@
+<div class="animate__animated animate__fadeIn">
+    <div class="row">
+        <div class="col-md-9 carrusel_may">
+            <slider-principal [imagenesArr]="Sliders"></slider-principal>
+        </div>
+        <div class="col-md-3 imagenDerecha">
+            <div class="imagenCentrada"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="contenido_adorno">
+                            <div class="titulo_adorno">2020 <br>CRÓNICA DE UNA PANDEMIA</div>
+                            <p>En el MIDE a partir del 29 de octubre del 2021.</p>
+
+                            <button type="button" class="btn" (click)="comprar()">¡COMPRA AQUÍ TUS BOLETOS!</button>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5 carrusel_min carrusel_sin_fraccion">
+                        <swiper [config]="config" (swiper)="onSwiper($event)">
+                            <ng-template swiperSlide><img src="assets/img/visita/sobre-el-2020-1.jpg" alt="Sobre el 2020 1"></ng-template>
+                            <ng-template swiperSlide><img src="assets/img/visita/sobre-el-2020-2.jpg" alt="Sobre el 2020 2"></ng-template>
+                            <ng-template swiperSlide><img src="assets/img/visita/sobre-el-2020-3.jpg" alt="Sobre el 2020 3"></ng-template>
+                        </swiper>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="contenido_adorno">
+                            <div class="titulo_adorno">COSTOS DE ENTRADA</div>
+                            <p>Si deseas visitar la exposición, estos son nuestros costos y descuentos disponibles:</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <div class="contenedor-entradas">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="caja-entrada">
+                                <div class="card">
+                                    <div class="card-header fondo-color-oscuro">
+                                        <h3>Entrada general</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="tarifa">
+                                            <h1 class="card-title">$95.00</h1>
+                                            <p class="card-text">por persona *</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img img1 wow animate__animated animate__fadeInUp"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="caja-entrada">
+                                <div class="card">
+                                    <div class="card-header fondo-color-oscuro">
+                                        <h3>Si eres adulto mayor, persona con discapacidad, estudiante o profesor</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="tarifa">
+                                            <p class="text-condicion">al mostrar tu credencial vigente, paga solo</p>
+                                            <h1 class="card-title">$75.00</h1>
+                                            <p class="card-text">por persona *</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img img2 wow animate__animated animate__fadeInUp"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="caja-entrada">
+                                <div class="card">
+                                    <div class="card-header fondo-color-oscuro">
+                                        <h3>Niños y niñas menores de 3 años</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="tarifa">
+                                            <p>ENTRADA</p>
+                                            <h1 class="card-title">GRATIS</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img img3 wow animate__animated animate__fadeInUp"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row espacio_volando">
+                        <div class="col-12 pt-3">
+                            <p>*El boleto de entrada de $95.00 y $75.00 incluye Exposición fotográfica + Acceso al museo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row py-4">
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="contenido_adorno">
+                            <div class="titulo_adorno">COMPRA LOS BOLETOS EN LÍNEA</div>
+                            <p>Porque nos interesa tu salud y la del personal del Museo, si lo deseas <strong>puedes comprar tus boletos online</strong>.</p>
+                            <p>De esta forma no tendrás que esperar para ingresar y no será necesario que te formes en nuestra taquilla. Cuando recibas tu boleto virtual, <strong> puedes usarlo directamente en el acceso al museo o canjearlo en taquilla por un boleto MIDE</strong>.</p>
+                            <div class="botones espacio_volando">
+                                <button type="button" class="principal" (click)="comprar()">¡CÓMPRALOS AQUÍ!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img class="img-fluid wow animate__animated animate__fadeInUp" src="assets/img/visita/mujer-comprando-min.png" alt="comprando en línea">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row py-4">
+        <div class="col-md-12 p-0">
+            <div class="contenedor_min">
+                <div class="contenedor-cartelera fondo-color-claro">
+                    <div class="row m-0 p-5">
+                        <div class="col-10 p-0">
+                            <h1>CARTELERA DE ACTIVIDADES</h1>
+                            <div class="detalle_actividades_movil"><img class="img-fluid" src="assets/img/visita/cartelera-min.png" alt="cartelera mide"></div>
+                            <p>Para complementar tu visita por la exposición, tendremos disponibles talleres y actividades puedes consultarlas aquí:</p>
+                        </div>
+                        <div class="col-2 p-0 text-center detalle_actividades">
+                            <img class="img-fluid" src="assets/img/visita/cartelera-min.png" alt="cartelera mide">
+                        </div>
+                    </div>
+
+                    <swiper [config]="configDos" class="wow animate__animated animate__fadeInRight carrusel_actividades">
+                        <ng-template swiperSlide *ngFor="let actividad of actividades">
+                            <div class="caja">
+                                <div class="header" [ngStyle]="{'background-image': 'url(' + actividad.urlImg + ')'}">
+                                    <div class="titulo">{{actividad.titulo}}</div>
+                                </div>
+                                <div class="body">
+                                    <div class="texto">{{actividad.texto}}</div>
+                                    <div class="item" *ngIf="actividad.dirigido != null">
+                                        <div class="icon icon-1"></div> <span class="text">Dirigido a: {{actividad.dirigido}}</span>
+                                    </div>
+                                    <div class="item" *ngIf="actividad.tiempo != null">
+                                        <div class="icon icon-2"></div> <span class="text">{{actividad.tiempo}} minutos aprox.</span>
+                                    </div>
+                                    <div class="item" *ngIf="actividad.participantes != null">
+                                        <div class="icon icon-3"></div> <span class="text">{{actividad.participantes}} participantes máx.</span>
+                                    </div>
+                                    <div class="item" *ngIf="actividad.fechas != null">
+                                        <div class="icon icon-4"></div> <span class="text">{{actividad.fechas}}</span>
+                                    </div>
+                                    <div class="item" *ngIf="actividad.horarios != null">
+                                        <div class="icon icon-5"></div> <span class="text">{{actividad.horarios}}</span>
+                                    </div>
+                                    <div class="item" *ngIf="actividad.ubicacion != null">
+                                        <div class="icon icon-6"></div> <span class="text">{{actividad.ubicacion}}</span>
+                                    </div>
+                                    <div class="logo {{actividad.class}}">
+                                        <img class="img-fluid" src="{{actividad.logo}}">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </ng-template>
+                    </swiper>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row py-4">
+        <div class="col-lg-12">
+            <div class="contenedor_min">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="contenido_reservaciones">
+                            <div class="titulo_adorno">RESERVACIONES PARA GRUPOS</div>
+                            <p>Te apoyamos a planear tu visita a la exposición de manera segura.</p>
+                            <h2 class="titulo">¡Contamos con todas<br> las medidas sanitarias necesarias!</h2>
+                            <div class="enlaces">
+                                <div class="row">
+                                    <div class="col-md-1 img-logo">
+                                        <a href="mailto:reservaciones2@mide.org.mx"><img class="img-fluid" src="assets/img/visita/gmail-min.png" alt="email mide"></a>
+                                    </div>
+                                    <div class="col-md-11 texto-link">
+                                        <a href="mailto:reservaciones2@mide.org.mx">reservaciones2@mide.org.mx</a>
+                                    </div>
+                                    <div class="col-md-1 img-logo">
+                                        <a target="_blank" href="https://www.reservacionesmide.com"><img class="img-fluid" src="assets/img/visita/web-min.png" alt="resevervación mide"></a>
+                                    </div>
+                                    <div class="col-md-11 texto-link">
+                                        <a target="_blank" href="https://www.reservacionesmide.com">www.reservacionesmide.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div class="contenedor-contacto">
+                            <div class="img-careta wow animate__animated animate__fadeInUp"></div>
+                            <div class="botones">
+                                <div class="p-3">
+                                    <a href="tel:+5551304616" class="principal">
+                                        <div class="btn">
+                                            <div class="icono"><img class="img-fluid" src="assets/img/visita/iconos/Tel-min.png" alt="email mide"></div>
+                                            <div class="texto">55 5130 4616</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-3">
+                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+5215523055350" class="blanco">
+                                        <div class="btn">
+                                            <div class="icono"><img class="img-fluid" src="assets/img/visita/iconos/Whatsapp-min.png" alt="email mide"></div>
+                                            <div class="texto">55 2305 5350</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="contenedor_min">
+                <div class="row">
+                    <div class="col-lg-6 p-0">
+                        <div class="contenedor_imagen">
+                            <img class="wow animate__animated animate__fadeInUp" src="assets/img/visita/mide.jpg" alt="Santiago Arau">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0">
+
+                        <div class="contenido_expo">
+                            <div class="titulo_adorno">CONOCE LA EXPOSICIÓN EN EL MIDE</div>
+                            <p>Si tú o tus acompañantes cuentan con alguna necesidad especial para visitar la exposición, puedes consultar y/o descargar nuestra</p>
+                            <div class="d-block">
+                                <div class="informes">
+                                    <div class="informe">
+                                        <div class="icono"><img class="img-fluid" src="assets/img/visita/iconos/ubicacion-min.png" alt="Ubicación"></div>
+                                        <div class="texto">Calle <strong>Tacuba 17, Centro Histórico <br> C.P. 06000, Ciudad de México</strong></div>
+                                    </div>
+                                    <div class="informe">
+                                        <div class="icono"><img class="img-fluid" src="assets/img/visita/iconos/horario-min.png" alt="Horario"></div>
+                                        <div class="texto"><strong>Martes a sábado:</strong> 11:00 a 19:00 h.<br> <strong>Domingos:</strong> 11:00 a 18:00 h.</div>
+                                    </div>
+                                </div>
+                                <div class="botontrasnparente">
+                                    <a class="text-decoration-none" href="assets/files/Accesibilidad-guia-OCT.pdf" download="Accesibilidad-guia-Oct.pdf">
+                                        <div class="opcionboton">
+                                            <div class="descarga-icon"></div> Guía de Accesibilidad aquí
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
