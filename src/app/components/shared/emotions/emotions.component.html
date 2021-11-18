@@ -1,0 +1,50 @@
+<div class="select-colors" id="select-colors">
+    <div class="btn-menu" (click)="mostrarMenu()" (mouseover)="mostrarMenu()" title="Abrir menú de opciones." id="btn-menu">
+        <img class="img-fluid" src="assets/img/menu/menu-icon-off-min.png">
+    </div>
+    <input type="hidden" id="globalColor">
+    <p>¿QUÉ SIENTES HOY?</p>
+    <ul>
+        <li>
+            <div id="numbEmotion1" class="circle bc-1 mytooltip right" (click)="changeEmotion(1)">
+                <span class="tiptext bc-1 tt-1">FRUSTRACIÓN</span>
+            </div>
+        </li>
+        <li>
+            <div id="numbEmotion2" class="circle bc-2 mytooltip right" (click)="changeEmotion(2)">
+                <span class="tiptext bc-2 tt-2">ASOMBRO</span>
+            </div>
+        </li>
+        <li>
+            <div id="numbEmotion3" class="circle bc-3 mytooltip right" (click)="changeEmotion(3)">
+                <span class="tiptext bc-3 tt-3">EMPATÍA</span>
+            </div>
+        </li>
+        <li>
+            <div id="numbEmotion4" class="circle bc-4 mytooltip right" (click)="changeEmotion(4)">
+                <span class="tiptext bc-4 tt-4">INCERTIDUMBRE</span>
+            </div>
+        </li>
+        <li>
+            <div id="numbEmotion5" class="circle bc-5 mytooltip right" (click)="changeEmotion(5)">
+                <span class="tiptext bc-5 tt-5">MELANCOLÍA</span>
+            </div>
+        </li>
+        <li>
+            <div id="numbEmotion6" class="circle bc-6 mytooltip right" (click)="changeEmotion(6)">
+                <span class="tiptext bc-6 tt-6">ESPERANZA</span>
+            </div>
+        </li>
+        <li>
+            <div id="numbEmotion7" class="circle bc-7 mytooltip right" (click)="changeEmotion(7)">
+                <span class="tiptext bc-7 tt-7 t-n">OTRO</span>
+            </div>
+        </li>
+        <li>
+            <button *ngIf="viewResult" type="button" class="btn btn-result" title="Abrir menú de opciones." data-toggle="modal" data-target="#exampleModal">
+                <span>¿QUÉ SIENTEN OTROS? <i class="fas fa-chevron-right"></i></span>
+            </button>
+        </li>
+    </ul>
+    
+</div>

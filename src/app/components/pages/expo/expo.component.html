@@ -1,0 +1,195 @@
+<div class="animate__animated animate__fadeIn">
+    <div class="row">
+        <div class="col-md-9 carrusel_may">
+            <slider-principal [imagenesArr]="Sliders"></slider-principal>
+        </div>
+        <div class="col-md-3 imagenDerecha">
+            <div class="imagenCentrada"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="titulo mb-3">La vida en el 2020 se detuvo;<br> para algunos no fue así…</h1>
+                        <h2 class="subtitulo mb-4">2020 Crónica de una Pandemia. Exposición fotográfica</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 order-2 order-md-1 py-4">
+                        <p>El año <b>2020</b> marcó la historia de la humanidad.<br> La aparición del <b>Covid-19</b> afectó a todas las personas en distintas dimensiones. Hoy, que seguimos viviendo las secuelas de la pandemia, estamos obligados a tratar
+                            de entender las implicaciones de la pandemia desde distintas ópticas. Entre ellas, por supuesto, el arte.</p>
+                        <p>Es así como el <b>Museo Interactivo de Economía (MIDE)</b> presenta la obra del fotógrafo mexicano <b>Santiago Arau</b>, quien con su lente ha registrado distintas caras y espacios de la Ciudad de México durante la emergencia sanitaria.
+                            Su obra plantea una conversación visual que nos llevan reflexionar sobre el yo y la otredad; el poder de lo invisible y la importancia de la solidaridad.</p>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-2 py-2 text-center">
+                        <img class="img-fluid wow animate__animated animate__fadeInUp" data-wow-duration="2s" src="assets/img/expo/sobre-la-expo1.jpg" alt="sobre la expo arau">
+                    </div>
+                    <div class="col-md-4 order-3 py-2 text-center">
+                        <img class="img-fluid wow animate__animated animate__fadeInUp" src="assets/img/expo/sobre-la-expo2.jpg" alt="sobre la expo arau">
+                    </div>
+                    <div class="col-md-8 order-4 py-4">
+                        <p>Con el enorme privilegio de mostrar este excepcional registro visual, el <b>MIDE</b> acompaña la conversación iniciada por Arau en torno al impacto social y económico de estos tiempos. El fotógrafo y el museo buscan crear espacios
+                            de reunión, reflexión y diálogo para compartir vivencias, hilar narrativas y testimoniar las realidades que nos conducen a la reconstrucción de nuestra cotidianeidad.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="row resaltado">
+        <div class="col-md-6 order-2 order-lg-1">
+            <div class="contenedor_imagen">
+                <img class="wow animate__animated animate__fadeInUp" src="assets/img/expo/santiago-arau.jpg" alt="Santiago Arau">
+            </div>
+        </div>
+        <div class="col-md-6 order-1 order-lg-2">
+            <div class="textoresaltado">
+                <div class="artista">El artista:</div>
+                <div class="nombre">SANTIAGO ARAU</div>
+                <p class="resal">Fotógrafo y cineasta nacido en Ciudad de México en 1980.</p>
+                <p class="resal">A lo largo de más 20 años de trayectoria ha documentado eventos de distinta índole, al igual que ha retratado la vida en lugares como la Ciudad de México, África, los Juegos Olímpicos y Mundiales deportivos. </p>
+                <p>Su obra ha sido reconocida en exposiciones individuales y colectivas en México, Europa y Asia, y ha sido publicada en reconocidos medios nacionales e internacionales. En 2017, codirigió un documental nominado al Ariel, al Emmy y a otros
+                    importantes premios.
+                </p>
+                <p>En años recientes la fotografía aérea a través de la utilización de drones se ha convertido en un elemento central y característico de su obra, misma que le ha permitido explorar y mostrar una mirada alterna de las cosas.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contenido_adorno">
+                            <div class="titulo_adorno">SU TRABAJO MÁS RECIENTE</div>
+                            <p>Fue durante la contingencia sanitaria donde capturó escuelas, estadios y sitios icónicos de nuestra ciudad en completa soledad, además capturó y dio visibilidad a los rostros de cientos de mexicanos cuyos oficios y profesiones
+                                no se han podido detener ni un solo instante.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 carrusel_min">
+                        <swiper [config]="config" (swiper)="onSwiper($event)">
+                            <ng-template swiperSlide><img src="assets/img/expo/slider/su-trabajo-reciente-1.jpg" alt="Su trabajo más reciente"></ng-template>
+                            <ng-template swiperSlide><img src="assets/img/expo/slider/su-trabajo-reciente-2.jpg" alt="Su trabajo más reciente 2"></ng-template>
+                            <ng-template swiperSlide><img src="assets/img/expo/slider/su-trabajo-reciente-3.jpg" alt="Su trabajo más reciente 3"></ng-template>
+                        </swiper>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <div class="contenido_multimedia">
+                    <div class="titulo_adorno">EN LA VOZ DEL ARTISTA</div>
+                    <p>El fotógrafo <b>Santiago Arau</b> nos cuenta la historia detrás de algunas de sus fotografías, los retos a los que se enfrentó y algunos testimonios que logró recabar durante la creación de su obra.</p>
+                    <div class="video_artista">
+                        <!--<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/-IOVhkrunCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                        <img src="assets/img/expo/en-la-voz-del-artista.jpeg" alt="En la voz del artista proximamente">
+                    </div>
+                    <!-- <div class="contenido_audios">
+                        <div class="renglon_audios">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="imagen_mini">
+                                        <img src="assets/img/expo/en-la-voz1-min.jpg" alt="En la voz">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="contenedor_texaud">
+                                        <div class="titulo_audio">LOREM IPSUM DOLOR</div>
+                                        <p class="texto_menor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                                        <div class="detalles_audio">
+                                            <span class="circulo"></span>10 SEP. - 30 min
+                                        </div>
+                                        <div class="titulo_audio titulo_centradover">¡MUY PRONTO!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="renglon_audios">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="imagen_mini">
+                                        <img src="assets/img/expo/en-la-voz2-min.jpg" alt="En la voz">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="contenedor_texaud">
+                                        <div class="titulo_audio titulo_centradover">¡DENTRO DE POCO!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="renglon_audios">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="imagen_mini">
+                                        <img src="assets/img/expo/en-la-voz3-min.jpg" alt="En la voz">
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="contenedor_texaud">
+                                        <div class="titulo_audio titulo_centradover">¡ESPÉRALO!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <div class="contenido_multimedia">
+                    <div class="titulo_adorno">GUÍAS PARA RECORRER LA EXPOSICIÓN</div>
+                    <p><b>Si tienes planeado visitar la exposición</b>, puedes descargar las siguientes guías. En ellas encontrarás una serie de preguntas que te ayudarán a observar de forma diferente las fotografías y a poner en juego tus experiencias
+                        previas para crear significados individuales a las imágenes que el artista presenta.</p>
+                    <div class="descargas">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="contenido_descarga text-left">
+                                    <div class="imagen_descarga"><img src="assets/img/expo/un-cambio-de-mirada-estetica.png" alt="Un cambio de mirada: Estética"></div>
+                                    <div class="texto_descarga">
+                                        <a href="assets/files/GuiaEstetica.pdf" download="GuiaEstetica.pdf" class="descarga-guia-estetica">
+                                            <span class="icono"><img src="assets/img/expo/descargar-icon-min.png" alt="Descargar"></span> DESCARGAR
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contenido_descarga text-center">
+                                    <div class="imagen_descarga"><img src="assets/img/expo/un-cambio-de-mirada-narrativa.png" alt="Un cambio de mirada: Narrativa"></div>
+                                    <div class="texto_descarga">
+                                        <a href="assets/files/GuiaNarrativa.pdf" download="GuiaNarrativa.pdf" class="descarga-guia-narrativa">
+                                            <span class="icono"><img src="assets/img/expo/descargar-icon-min.png" alt="Descargar"></span> DESCARGAR
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contenido_descarga text-right">
+                                    <div class="imagen_descarga"><img src="assets/img/expo/un-cambio-de mirada-experiencial.png" alt="Un cambio de mirada: Experiencial"></div>
+                                    <div class="texto_descarga">
+                                        <a href="assets/files/GuiaExperiencial.pdf" download="GuiaExperiencial.pdf" class="descarga-guia-experiencial">
+                                            <span class="icono"><img src="assets/img/expo/descargar-icon-min.png" alt="Descargar"></span> DESCARGAR
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

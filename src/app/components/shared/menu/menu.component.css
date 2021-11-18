@@ -1,0 +1,7 @@
+.btn-arrow-left{
+    position: relative;
+    top: 110px;
+    z-index: 1;
+    right: -40%;
+    cursor: pointer;
+}

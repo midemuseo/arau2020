@@ -1,0 +1,332 @@
+<div class="animate__animated animate__fadeIn">
+    <div class="row">
+        <div class="col-md-9 carrusel_may">
+            <slider-principal [imagenesArr]="Sliders"></slider-principal>
+        </div>
+        <div class="col-md-3 imagenDerecha">
+            <div class="imagenCentrada"></div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <h1 class="titulo mb-3">sobre fotografía</h1>
+                <p>La <b>fotografía</b> ha sido una manera de capturar o documentar momentos icónicos, especiales y posiblemente irrepetibles. Su evolución ha ido de la mano del hombre, convirtiéndose en arte y en una forma de recordar lo que somos. </p>
+                <p>En esta sección podrás encontrar distintos recursos que te permitirán conocer y adentrarte al mundo de la fotografía.</p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <div class="imagen-con-boton">
+                    <div class="imagen"></div>
+                    <div class="logo"></div>
+                    <div class="texto">"Descubre cómo tú, yo, todos vivimos la pandemia"</div>
+                    <button type="button" (click)="link()" class="btn">CONOCE MÁS <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="contenido_adorno menor">
+                            <div class="titulo_adorno">LA VIDA CONTENIDA</div>
+                            <div class="subtitulo_adorno">¿Cómo otras personas están viviendo la pandemia?</div>
+                            <div class="botonblanco">
+                                <div class="opcionboton">
+                                    DESCUBRELO AQUÍ
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 carrusel_min">
+                        <div class="imagen_fija">
+                            <img src="assets/img/fotografia/sobre-la-fotografia.jpg" alt="Sobre la fotografía">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <div class="contenido_multimedia carrusel_diferente">
+                    <div class="titulo_adorno sin_adorno">¿IMAGINAS VER EL SUELO DESDE EL CIELO?</div>
+                    <swiper [config]="config" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()" [pagination]="{ type: 'fraction', clickable: true }">
+                        <ng-template swiperSlide>
+                            <img class="escritorio" src="assets/img/fotografia/slide1.jpg" alt="Sobre la fotografía">
+                            <a data-fancybox="gallery" href="assets/img/fotografia/slide1-mobile.jpg"><img class="movil" src="assets/img/fotografia/slide1-mobile.jpg" alt="Sobre la fotografía"></a>
+                        </ng-template>
+                        <ng-template swiperSlide>
+                            <img class="escritorio" src="assets/img/fotografia/slide2.jpg" alt="Sobre la fotografía">
+                            <a data-fancybox="gallery" href="assets/img/fotografia/slide2-mobile.jpg"><img class="movil" src="assets/img/fotografia/slide2-mobile.jpg" alt="Sobre la fotografía"></a>
+                        </ng-template>
+                        <ng-template swiperSlide>
+                            <img class="escritorio" src="assets/img/fotografia/slide3.jpg" alt="Sobre la fotografía">
+                            <a data-fancybox="gallery" href="assets/img/fotografia/slide3-mobile.jpg"><img class="movil" src="assets/img/fotografia/slide3-mobile.jpg" alt="Sobre la fotografía"></a>
+                        </ng-template>
+                        <ng-template swiperSlide>
+                            <img class="escritorio" src="assets/img/fotografia/slide4.jpg" alt="Sobre la fotografía">
+                            <a data-fancybox="gallery" href="assets/img/fotografia/slide4-mobile.jpg"><img class="movil" src="assets/img/fotografia/slide4-mobile.jpg" alt="Sobre la fotografía"></a>
+                        </ng-template>
+                        <ng-template swiperSlide>
+                            <img class="escritorio" src="assets/img/fotografia/slide5.jpg" alt="Sobre la fotografía">
+                            <a data-fancybox="gallery" href="assets/img/fotografia/slide5-mobile.jpg"><img class="movil" src="assets/img/fotografia/slide5-mobile.jpg" alt="Sobre la fotografía"></a>
+                        </ng-template>
+                    </swiper>
+                    <div class="swiper-button-prev2"></div>
+                    <div class="swiper-button-next2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <div class="contenedor_int">
+                    <div class="px-4 pb-4">
+                        <h1 class="titulo">IDEAS Y RELATOS SOBRE LA FOTOGRAFÍA</h1>
+                        <p class="">
+                            Encuentro sonoro con tres diferentes fotógrafos, donde a través de fragmentos de algunas obras literarias, nos narran su experiencia, acercamiento con la fotografía y qué significa para cada uno de ellos estar frente a la lente.
+                        </p>
+                        <p><strong>Te invitamos a que cierres los ojos por un momento y te dejes llevar por este fascinante mundo de la fotografía.</strong></p>
+                    </div>
+                    <div class="playlist row">
+                        
+                        <div class="col-lg-6 py-5 audio-ver-el-mundo">
+                            <div class="capa"></div>
+                            <ang-music-player [audioList]=audioList1></ang-music-player>
+                        </div>
+                        <div class="col-lg-6 texto">
+                            <p> 
+                                <strong class="enfasis">Ideas y frases del fotógrafo: Joel Meyerowitz</strong><br>
+                                Pionero de la fotografía urbana a color y único fotógrafo en entrar a la zona tras el atentado a las Torres Gemelas.<br>
+                                <small class="cursive">Extracto del texto de Meyerowitz. J. (2018). ¡Mirar! Guía para acercarse a la fotografía. Gustavo Gili.</small>
+                            </p>
+                        </div>
+                        <!--<app-audio [urlAudio]="audio1"></app-audio>-->
+                    </div>
+                    <div class="playlist row">
+                        
+                        <div class="col-lg-6 py-5 audio-el-color-pide">
+                            <div class="capa"></div>
+                            <ang-music-player [audioList]=audioList2></ang-music-player>
+                        </div>
+                        <div class="col-lg-6 texto">
+                            <p>
+                                <strong class="enfasis">Ideas y frases de la fotógrafa: Mariana Yampolsky</strong><br>
+                                Capturó la vida cotidiana, las festividades patronales, religiosas  y familiares de los pueblos mexicanos.<br>
+                                <small class="cursive">Extracto del texto de Roque. G. (2003). El color en el arte mexicano. Universidad Nacional Autónoma de México.</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="playlist row">
+                        
+                        <div class="col-lg-6 py-5 audio-la-conquista">
+                            <div class="capa"></div>
+                            <ang-music-player [audioList]=audioList3></ang-music-player>
+                        </div>
+                        <div class="col-lg-6 texto">
+                            <p>
+                                <strong class="enfasis">Ideas y frases del fotógrafo: Juan José Kochen</strong><br>
+                                Arquitecto y editor, profesor de la Universidad Iberoamericana y Director General de Fundación ICA.<br>
+                                <small class="cursive">Extracto del texto de Kochen. J. (2019). La conquista del aire. Fundación BBVA-Sexto Piso.</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contenedor_min">
+                <div class="contenido_multimedia">
+                    <div class="titulo_adorno">CREA</div>
+                </div>
+                <div *ngIf="bloque == 1 " class="animate__animated animate__fadeIn">
+                    
+                    <div class="py-3 position-relative">
+                        <!-- <div class="video">
+                            <div class="youtube-video" id="b9U3asR7HpM"></div>
+                            <div class="fondo ocultar" style="background-image:url(assets/img/videos/filtro-caratula.jpeg)">
+                            </div>
+                        </div>
+                        <div id="repo" class="you ocultar"  onclick="reproducir1()">
+                            <img src="assets/img/videos/youtube_btn.png" alt="Youtube">
+                        </div>  -->
+                        <!-- <img src="assets/img/videos/crea-colorea-una-foto-aerea.jpg" style="width: 100%;">
+                        <div class="proximo">
+                            
+                        </div>-->
+                        <!-- <youtube-player 
+                        videoId="b9U3asR7HpM" 
+                        suggestedQuality="highres"
+                        [height]="350" 
+                        [width]="900" 
+                        [startSeconds]="4"
+                        [endSeconds]="8">
+                        </youtube-player> -->
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/TGbALQVEKA0?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="py-4 px-4 borde-claro">
+                        <h2 class="subtitulo">CREA TUS FILTROS FOTOGRÁFICOS</h2>
+                        <p>
+                            En La República, Platón planteó la alegoría de una caverna en la que había un grupo de prisioneros que solo podían ver las sombras de objetos que se proyectaban en un muro. El protagonista del diálogo, dice que los prisioneros creen que aquello que observan
+                            es el mundo real, sin darse cuenta de que son sólo las sombras de los objetos proyectados sobre la pared.<br> La realidad proyectada en una imagen fotográfica no siempre es lo que parece. Los trucos, los
+                            montajes, la ilusión pueden parecer simples accidentes, pero no lo son si hay una mente detrás de ellos dándoles forma e intención.<br> Atrévete a modificar tus fotografías, a darles un acabado diferente, como cada instante, deja
+                            que el momento fotográfico sea único, como el trabajo del fotógrafo Santiago Arau, deja que cada fotografía sea irrepetible.<br> En la siguiente actividad podrás conocer cinco filtros hechos en casa que te permitirán alterar las
+                            fotografías que captes con tus dispositivos móviles.<br>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <!-- <div class="botontrasnparente">
+                                    <a class="text-decoration-none" href="assets/files/Colorea-una-foto-aerea.zip" download="Colorea-una-foto-aerea.zip">
+                                        <div class="opcionboton" >
+                                            <div class="descarga-icon"></div> DESCARGA EL MATERIAL
+                                        </div>
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="bloque == 2 " class="animate__animated animate__fadeIn">
+                    <div class="py-3 position-relative">
+                        <!-- <div class="video">
+                            <div class="youtube-video" id="wijaqwCZjT8"></div>
+                            <div class="fondo ocultar" style="background-image:url(assets/img/videos/colorea-una-foto-aerea-portada.jpg)">
+                            </div>
+                        </div>
+                        <div id="repo" class="you ocultar" >
+                            <img src="assets/img/videos/youtube_btn.png" alt="Youtube" onclick="reproducir2()">
+                        </div> -->
+                        <!--<img src="assets/img/videos/crea-proximamente.jpg" style="width: 100%;">
+                            <div class="proximo">
+                                <h1 class="texto">¡PRÓXIMAMENTE!</h1>
+                            </div>-->
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/BLS77GpgMGE?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="py-4 px-4 borde-claro">
+                        <h2 class="subtitulo">ARMA UN ESTEREOSCOPIO</h2>
+                        <p>
+                            Un estereoscopio es un dispositivo óptico desarrollado en el siglo XIX que ayudó a estudiar la percepción humana, cómo vemos la tridimensionalidad y la profundidad.<br>
+                            Es un aparato mediante el cual pueden presentarse dos cuadros planos, uno al ojo derecho y otro al ojo izquierdo, para la obtención de un solo cuadro fundido en tres dimensiones.<br>
+                            En la siguiente actividad podrás descargar la plantilla para recortar y armar un sencillo estereoscopio. <br>
+                        </p>
+                            <strong>¡Manos a la obra!</strong>
+                            <div class="botontrasnparente">
+                                <a class="text-decoration-none" href="assets/files/arma-estereoscopio.zip" download="arma-estereoscopio.zip">
+                                    <div class="opcionboton">
+                                        <div class="descarga-icon"></div> ARCHIVOS DESCARGABLES
+                                    </div>
+                                </a>
+                            </div>
+                            <br>
+                        
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-8">
+                                <!-- <div class="botontrasnparente">
+                                    <div class="opcionboton">
+                                        <i class="fas fa-download"></i> DESCARGA EL MATERIAL
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="bloque == 3 " class="animate__animated animate__fadeIn">
+                    <div class="py-3 position-relative">
+                        <!-- <div class="video">
+                            <div class="youtube-video" id="b9U3asR7HpM"></div>
+                            <div class="fondo ocultar" style="background-image:url(assets/img/videos/colorea-una-foto-aerea-portada.jpg)">
+                            </div>
+                        </div>
+                        <div id="repo" class="you ocultar" >
+                            <img src="assets/img/videos/youtube_btn.png" alt="Youtube" onclick="reproducir3()">
+                        </div>
+                        <img src="assets/img/videos/crea-proximamente.jpg" style="width: 100%;">
+                        <div class="proximo">
+                            <h1 class="texto">¡PRÓXIMAMENTE!</h1>
+                        </div>-->
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/cWzvm5Bc7qE?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="py-4 px-4 borde-claro">
+                        <h2 class="subtitulo">ELABORA UN FOTO-ÁLBUM</h2>
+                        <p>
+                            La imagen fotográfica cambió la manera en que entendemos la memoria. Un simple pasaje de la infancia puede adquirir claridad  y detalle con solo ver una vieja fotografía.<br>
+                            El 2020 ha sido un año lleno de momentos cuyos detalles podrán escaparse a nuestra memoria con el paso del tiempo, pero sin duda, pasará a la posteridad como un año diferente.<br>
+                            Para captar algunos de esos momentos que vives día a día, te proponemos realizar un foto-álbum en el que podrás incorporar imágenes, pensamientos y todo detalle que desees capturar para la posteridad.<br>
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-8">
+                                <!-- <div class="botontrasnparente">
+                                    <div class="opcionboton">
+                                        <i class="fas fa-download"></i> DESCARGA EL MATERIAL
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-4">
+                    <div class="col-md-4">
+                        <div class="caja animated animatedFadeInUp fadeInUp">
+                            <div (click)="verBloque(1)" class="img video-crea-filtros" style="background-image: url(assets/img/albums/filtros-abum.png);"></div>
+                            <!-- <div *ngIf="bloque != 1" class="capa">
+                                    <div class="contenido">
+                                        <div class="ico"></div>
+                                        <div class="text">!PRÓXIMAMENTE¡</div>
+                                    </div>
+                                </div> -->
+                            <div class="texto">
+                                <h3>CREA TUS FILTROS FOTOGRÁFICOS</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="caja animated animatedFadeInUp fadeInUp">
+                            <div (click)="verBloque(2)" class="img video-crea-estereoscopio" style="background-image: url(assets/img/albums/estereoscopio.jpg);"></div>
+                            <!--<div class="capa">
+                                    <div class="contenido">
+                                        <div class="ico"></div>
+                                        <div class="text">!PRÓXIMAMENTE¡</div>
+                                    </div>
+                                </div>-->
+                            <div class="texto">
+                                <h3>ARMA UN ESTEREOSCOPIO</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="caja animated animatedFadeInUp fadeInUp">
+                            <div (click)="verBloque(3)" class="img video-crea-album" style="background-image: url(assets/img/albums/foto-album.jpg);"></div>
+                            <!--<div class="capa">
+                                    <div class="contenido">
+                                        <div class="ico"></div>
+                                        <div class="text">!PRÓXIMAMENTE¡</div>
+                                    </div>
+                                </div>-->
+                            <div class="texto">
+                                <h3>ELABORA UN FOTO-ÁLBUM</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

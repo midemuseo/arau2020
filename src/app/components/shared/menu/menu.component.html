@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="btn-arrow-left" (mouseover)="cerrarMenu()" title="Cerrar menú de opciones.">
+        <img src="assets/img/menu/arrow-left-min.png">
+    </div>
+    <a class="navbar-brand" [routerLink]="['home']"><img class="img-fluid" src="assets/img/logo-mide-digital-menu-min.png"></a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <ul class="navbar-nav">
+            <li class="movil-collapse">
+                <div class="img" (mouseover)="cerrarMenu()" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="assets/img/menu/flecha-derecha.png">
+                </div>
+            </li>
+            <li (click)="cerrarMenu()" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="nav-item" routerLinkActive="active">
+                <a class="nav-link borde-b-link" [routerLink]="['expo']">
+                    <div class="icon">
+                        <div class="icono icon-expo"></div>
+                    </div>
+                    <div class="text">SOBRE LA EXPO </div>
+                </a>
+            </li>
+            <li (click)="cerrarMenu()" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="nav-item" routerLinkActive="active">
+                <a class="nav-link borde-b-link" [routerLink]="['fotografia']">
+                    <div class="icon">
+                        <div class="icono icon-foto"></div>
+                    </div>
+                    <div class="text">SOBRE FOTOGRAFÍA</div>
+                </a>
+            </li>
+            <li (click)="cerrarMenu()" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="nav-item" routerLinkActive="active">
+                <a class="nav-link borde-b-link" [routerLink]="['sobre-2020']">
+                    <div class="icon">
+                        <div class="icono icon-cubreboca"></div>
+                    </div>
+                    <div class="text">SOBRE EL 2020</div>
+                </a>
+            </li>
+            <li (click)="cerrarMenu()" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="nav-item" routerLinkActive="active">
+                <a class="nav-link borde-b-link" [routerLink]="['prepara-tu-visita']">
+                    <div class="icon">
+                        <div class="icono icon-tiket"></div>
+                    </div>
+                    <div class="text">PREPARA TU VISITA</div>
+                </a>
+            </li>
+            <li (click)="cerrarMenu()" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="nav-item" routerLinkActive="active">
+                <a class="nav-link borde-b-link" [routerLink]="['guia-accesibilidad']">
+                    <div class="icon">
+                        <div class="icono icon-discapacidad"></div>
+                    </div>
+                    <div class="text">ACCESIBILIDAD</div>
+                </a>
+            </li>
+            <!--<li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" >
+            </li>-->
+            <li (click)="cerrarMenu()" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="nav-item" routerLinkActive="active">
+                <a class="nav-link " [routerLink]="['gratificacion']">
+                    <div class="icon">
+                        <div class="icono icon-regalos"></div>
+                    </div>
+                    <div class="text">GRATIFICACIÓN</div>
+                </a>
+            </li>
+            <li class="movil-arau">
+                <div class="img">
+                    <img src="assets/img/menu/logo-expo-arau.png">
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

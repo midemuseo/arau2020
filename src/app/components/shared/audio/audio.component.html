@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-2">
+        <div class="cover">
+            <img src="assets/img/covers/_joel-meyerowitz-min.jpg">
+        </div>
+    </div>
+    <div class="col-9 row detalles">
+
+            <div class="col-12">
+                <h2 class="dato">Ver el mundo que nos rodea</h2>
+                <p>Extracto del texto de Meyerowitz. J. (2018). ¡Mirar! Guía para acercarse a la fotografía. Gustavo Gilo.
+                    Ideas y frases del fotógrafo: <strong>Joel Meyerowitz</strong> <br>
+                    Pionero de la fotografía urbana a color y único fotógrafo en entrar a la zona tras el atentado a las Torres Gemelas.
+                </p>
+            </div>
+            <div class="botones col-1">
+                <button *ngIf="!iniciado" class="btn btn-player principal" (click)="reproducir()"><i class="fas fa-play"></i></button>
+                <button *ngIf="iniciado" class="btn btn-player principal" (click)="detener()"><i class="fas fa-pause"></i></button>
+            </div>
+            <div class="col-8 position-player">
+                <div class="line-player"></div>
+            </div>
+        
+        
+    </div>
+</div>
+
