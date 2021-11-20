@@ -16,7 +16,7 @@
                             <div class="titulo_adorno">2020 <br>CRÓNICA DE UNA PANDEMIA</div>
                             <p>En el MIDE a partir del 29 de octubre del 2021.</p>
 
-                            <button type="button" class="btn" (click)="comprar()">¡COMPRA AQUÍ TUS BOLETOS!</button>
+                            <button type="button" class="btn compra-boletos" (click)="comprar()">¡COMPRA AQUÍ TUS BOLETOS!</button>
 
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                             <p>Porque nos interesa tu salud y la del personal del Museo, si lo deseas <strong>puedes comprar tus boletos online</strong>.</p>
                             <p>De esta forma no tendrás que esperar para ingresar y no será necesario que te formes en nuestra taquilla. Cuando recibas tu boleto virtual, <strong> puedes usarlo directamente en el acceso al museo o canjearlo en taquilla por un boleto MIDE</strong>.</p>
                             <div class="botones espacio_volando">
-                                <button type="button" class="principal" (click)="comprar()">¡CÓMPRALOS AQUÍ!</button>
+                                <button type="button" class="principal compra-boletos" (click)="comprar()">¡CÓMPRALOS AQUÍ!</button>
                             </div>
                         </div>
                     </div>
@@ -223,7 +223,7 @@
                             <div class="img-careta wow animate__animated animate__fadeInUp"></div>
                             <div class="botones">
                                 <div class="p-3">
-                                    <a href="tel:+5551304616" class="principal">
+                                    <a href="tel:+5551304616" class="principal boton-tel">
                                         <div class="btn">
                                             <div class="icono"><img class="img-fluid" src="assets/img/visita/iconos/Tel-min.png" alt="email mide"></div>
                                             <div class="texto">55 5130 4616</div>
@@ -231,7 +231,7 @@
                                     </a>
                                 </div>
                                 <div class="p-3">
-                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+5215523055350" class="blanco">
+                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+5215523055350" class="blanco boton-whats">
                                         <div class="btn">
                                             <div class="icono"><img class="img-fluid" src="assets/img/visita/iconos/Whatsapp-min.png" alt="email mide"></div>
                                             <div class="texto">55 2305 5350</div>
@@ -256,35 +256,46 @@
                         </div>
                     </div>
                     <div class="col-lg-6 p-0">
-
                         <div class="contenido_expo">
                             <div class="titulo_adorno">CONOCE LA EXPOSICIÓN EN EL MIDE</div>
                             <p>Si tú o tus acompañantes cuentan con alguna necesidad especial para visitar la exposición, puedes consultar y/o descargar nuestra</p>
-                            <div class="d-block">
-                                <div class="informes">
-                                    <div class="informe">
-                                        <div class="icono"><img class="img-fluid" src="assets/img/visita/iconos/ubicacion-min.png" alt="Ubicación"></div>
-                                        <div class="texto">Calle <strong>Tacuba 17, Centro Histórico <br> C.P. 06000, Ciudad de México</strong></div>
-                                    </div>
-                                    <div class="informe">
-                                        <div class="icono"><img class="img-fluid" src="assets/img/visita/iconos/horario-min.png" alt="Horario"></div>
-                                        <div class="texto"><strong>Martes a sábado:</strong> 11:00 a 19:00 h.<br> <strong>Domingos:</strong> 11:00 a 18:00 h.</div>
-                                    </div>
+                            <div class="informes">
+                                <div class="informe">
+                                    <div class="icono"><img class="img-fluid" src="assets/img/visita/iconos/ubicacion-min.png" alt="Ubicación"></div>
+                                    <div class="texto">Calle <strong>Tacuba 17, Centro Histórico <br> C.P. 06000, Ciudad de México</strong></div>
                                 </div>
+                                <div class="informe">
+                                    <div class="icono"><img class="img-fluid" src="assets/img/visita/iconos/horario-min.png" alt="Horario"></div>
+                                    <div class="texto"><strong>Martes a sábado:</strong> 11:00 a 19:00 h.<br> <strong>Domingos:</strong> 11:00 a 18:00 h.</div>
+                                </div>
+                            </div>
+        
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3073.764938907956!2d-99.13835723557675!3d19.436033324375394!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2cf06c7f4a8f31ff!2sMIDE%2C%20Museo%20Interactivo%20de%20Econom%C3%ADa!5e0!3m2!1ses!2smx!4v1637440276511!5m2!1ses!2smx&zoom=30" width="400" height="185" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                       
+
+                            <div class="d-block">
                                 <div class="botontrasnparente">
                                     <a class="text-decoration-none" href="assets/files/Accesibilidad-guia-OCT.pdf" download="Accesibilidad-guia-Oct.pdf">
-                                        <div class="opcionboton">
+                                        <div class="opcionboton guia-accesibilidad">
                                             <div class="descarga-icon"></div> Guía de Accesibilidad aquí
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                        </div>
 
                     </div>
-                </div>
+                    </div>                    
             </div>
         </div>
     </div>
 
+</div>
+
+<div class="contenedor_min">
+    <div class="row">
+                <div class="col-lg-6 p-0">
+                </div>
+                <div class="col-lg-6 p-0">
+
+                </div>    
+    </div>
 </div>

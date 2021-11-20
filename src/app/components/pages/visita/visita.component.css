@@ -264,6 +264,11 @@
     float: left;
 }
 
+.contenedor_imagen{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .contenedor_imagen img {
     max-width: 100%;
 }

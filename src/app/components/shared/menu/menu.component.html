@@ -1,8 +1,11 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav  class="navbar navbar-expand-lg navbar-light ">
     <div class="btn-arrow-left" (mouseover)="cerrarMenu()" title="Cerrar menú de opciones.">
         <img src="assets/img/menu/arrow-left-min.png">
     </div>
-    <a class="navbar-brand" [routerLink]="['home']"><img class="img-fluid" src="assets/img/logo-mide-digital-menu-min.png"></a>
+    <a id="menu-responsive" class="navbar-brand" [routerLink]="['home']">
+        <img id ="logo-d" class="img-fluid logo-d" src="assets/img/logo-mide-digital-menu-min.png">
+        <img class="img-fluid logo-r" src="assets/img/logo-mide-digital-menu-min-w.png">
+    </a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

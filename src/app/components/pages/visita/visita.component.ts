@@ -118,7 +118,7 @@ export class VisitaComponent implements OnInit {
     }
 
     comprar(){
-       window.open("https://wwv.mide.org.mx/MIDE_INTERNET/Operacion/Compras/Compras.aspx", "_blank");
+       window.open("https://www.mide.org.mx/venta-de-boletos/", "_blank");
     }
 
     cambiarOrden(){
