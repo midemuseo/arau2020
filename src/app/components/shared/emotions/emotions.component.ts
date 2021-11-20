@@ -31,34 +31,50 @@ export class EmotionsComponent implements OnInit {
   public changeEmotion(id: number) {
     this.viewResult = true;
     let contenido:any;
+    let menuresponsive: any;
+    let logoresponsive:any;
     var input=document.getElementById("globalColor");
     input?.setAttribute('value',id.toString());
     localStorage.setItem('tipo_emocion', id.toString());
     contenido = window.document.getElementById("contenido");
+    menuresponsive = window.document.getElementById("menu-responsive");
+    logoresponsive = window.document.getElementById("logo-d");
     if (contenido) {}
     this.clearColors(contenido);
+    this.clearColors(menuresponsive);
+    this.clearColors(logoresponsive);
     this.clieaActive(id);
+    if(id !== 7){          
+      logoresponsive.classList.add("logo-color-hidden");
+    }
     switch (id) {
         case 1:
           contenido.classList.add("bc-body-1");
-            break;
+          menuresponsive.classList.add("bc-body-1");
+          break;
         case 2:
           contenido.classList.add("bc-body-2");
+          menuresponsive.classList.add("bc-body-2")
             break;
         case 3:
           contenido.classList.add("bc-body-3");
+          menuresponsive.classList.add("bc-body-3") 
             break;
         case 4:
           contenido.classList.add("bc-body-4");
+          menuresponsive.classList.add("bc-body-4")
             break;
         case 5:
           contenido.classList.add("bc-body-5");
+          menuresponsive.classList.add("bc-body-5") 
             break;
         case 6:
           contenido.classList.add("bc-body-6");
+          menuresponsive.classList.add("bc-body-6")
             break;
         case 7:
           contenido.classList.add("bc-body-7");
+          menuresponsive.classList.add("bc-body-7")
             break;
         default:
             break;
@@ -82,6 +98,7 @@ export class EmotionsComponent implements OnInit {
     element.classList.remove("bc-body-5");
     element.classList.remove("bc-body-6");
     element.classList.remove("bc-body-7");
+    element.classList.remove("logo-color-hidden");
   }
   public clieaActive(id:number){
 

@@ -102,7 +102,7 @@
                     </div>
                     <div class="playlist row">
                         
-                        <div class="col-lg-6 py-5">
+                        <div class="col-lg-6 py-5 audio-ver-el-mundo">
                             <div class="capa"></div>
                             <ang-music-player [audioList]=audioList1></ang-music-player>
                         </div>
@@ -115,9 +115,9 @@
                         </div>
                         <!--<app-audio [urlAudio]="audio1"></app-audio>-->
                     </div>
-                    <div class="playlist row disabled">
+                    <div class="playlist row">
                         
-                        <div class="col-lg-6 py-5">
+                        <div class="col-lg-6 py-5 audio-el-color-pide">
                             <div class="capa"></div>
                             <ang-music-player [audioList]=audioList2></ang-music-player>
                         </div>
@@ -129,9 +129,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="playlist row disabled">
+                    <div class="playlist row">
                         
-                        <div class="col-lg-6 py-5">
+                        <div class="col-lg-6 py-5 audio-la-conquista">
                             <div class="capa"></div>
                             <ang-music-player [audioList]=audioList3></ang-music-player>
                         </div>
@@ -177,7 +177,7 @@
                         [startSeconds]="4"
                         [endSeconds]="8">
                         </youtube-player> -->
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/b9U3asR7HpM?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/TGbALQVEKA0?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                     <div class="py-4 px-4 borde-claro">
@@ -212,10 +212,11 @@
                         <div id="repo" class="you ocultar" >
                             <img src="assets/img/videos/youtube_btn.png" alt="Youtube" onclick="reproducir2()">
                         </div> -->
-                        <img src="assets/img/videos/crea-proximamente.jpg" style="width: 100%;">
-                        <div class="proximo">
-                            <h1 class="texto">¡PRÓXIMAMENTE!</h1>
-                        </div>
+                        <!--<img src="assets/img/videos/crea-proximamente.jpg" style="width: 100%;">
+                            <div class="proximo">
+                                <h1 class="texto">¡PRÓXIMAMENTE!</h1>
+                            </div>-->
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/BLS77GpgMGE?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                     <div class="py-4 px-4 borde-claro">
@@ -224,9 +225,17 @@
                             Un estereoscopio es un dispositivo óptico desarrollado en el siglo XIX que ayudó a estudiar la percepción humana, cómo vemos la tridimensionalidad y la profundidad.<br>
                             Es un aparato mediante el cual pueden presentarse dos cuadros planos, uno al ojo derecho y otro al ojo izquierdo, para la obtención de un solo cuadro fundido en tres dimensiones.<br>
                             En la siguiente actividad podrás descargar la plantilla para recortar y armar un sencillo estereoscopio. <br>
-                            <strong>¡Manos a la obra!</strong>
-                            <br>
                         </p>
+                            <strong>¡Manos a la obra!</strong>
+                            <div class="botontrasnparente">
+                                <a class="text-decoration-none" href="assets/files/arma-estereoscopio.zip" download="arma-estereoscopio.zip">
+                                    <div class="opcionboton">
+                                        <div class="descarga-icon"></div> ARCHIVOS DESCARGABLES
+                                    </div>
+                                </a>
+                            </div>
+                            <br>
+                        
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-8">
                                 <!-- <div class="botontrasnparente">
@@ -247,11 +256,12 @@
                         </div>
                         <div id="repo" class="you ocultar" >
                             <img src="assets/img/videos/youtube_btn.png" alt="Youtube" onclick="reproducir3()">
-                        </div> -->
+                        </div>
                         <img src="assets/img/videos/crea-proximamente.jpg" style="width: 100%;">
                         <div class="proximo">
                             <h1 class="texto">¡PRÓXIMAMENTE!</h1>
-                        </div>
+                        </div>-->
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/cWzvm5Bc7qE?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                     <div class="py-4 px-4 borde-claro">
@@ -275,13 +285,13 @@
                 <div class="row py-4">
                     <div class="col-md-4">
                         <div class="caja animated animatedFadeInUp fadeInUp">
-                            <div (click)="verBloque(1)" class="img" style="background-image: url(assets/img/albums/filtros-abum.png);"></div>
+                            <div (click)="verBloque(1)" class="img video-crea-filtros" style="background-image: url(assets/img/albums/filtros-abum.png);"></div>
                             <!-- <div *ngIf="bloque != 1" class="capa">
-                                <div class="contenido">
-                                    <div class="ico"></div>
-                                    <div class="text">!PRÓXIMAMENTE¡</div>
-                                </div>
-                            </div> -->
+                                    <div class="contenido">
+                                        <div class="ico"></div>
+                                        <div class="text">!PRÓXIMAMENTE¡</div>
+                                    </div>
+                                </div> -->
                             <div class="texto">
                                 <h3>CREA TUS FILTROS FOTOGRÁFICOS</h3>
                             </div>
@@ -289,14 +299,13 @@
                     </div>
                     <div class="col-md-4">
                         <div class="caja animated animatedFadeInUp fadeInUp">
-                            <div (click)="verBloque(2)" class="img" style="background-image: url(assets/img/albums/estereoscopio.png);"></div>
-                            <div class="capa">
-                                <div class="contenido">
-                                    <div class="ico"></div>
-                                    <div class="text">!PRÓXIMAMENTE¡</div>
-                                </div>
-
-                            </div>
+                            <div (click)="verBloque(2)" class="img video-crea-estereoscopio" style="background-image: url(assets/img/albums/estereoscopio.jpg);"></div>
+                            <!--<div class="capa">
+                                    <div class="contenido">
+                                        <div class="ico"></div>
+                                        <div class="text">!PRÓXIMAMENTE¡</div>
+                                    </div>
+                                </div>-->
                             <div class="texto">
                                 <h3>ARMA UN ESTEREOSCOPIO</h3>
                             </div>
@@ -304,13 +313,13 @@
                     </div>
                     <div class="col-md-4">
                         <div class="caja animated animatedFadeInUp fadeInUp">
-                            <div (click)="verBloque(3)" class="img" style="background-image: url(assets/img/albums/foto-album.png);"></div>
-                            <div class="capa">
-                                <div class="contenido">
-                                    <div class="ico"></div>
-                                    <div class="text">!PRÓXIMAMENTE¡</div>
-                                </div>
-                            </div>
+                            <div (click)="verBloque(3)" class="img video-crea-album" style="background-image: url(assets/img/albums/foto-album.jpg);"></div>
+                            <!--<div class="capa">
+                                    <div class="contenido">
+                                        <div class="ico"></div>
+                                        <div class="text">!PRÓXIMAMENTE¡</div>
+                                    </div>
+                                </div>-->
                             <div class="texto">
                                 <h3>ELABORA UN FOTO-ÁLBUM</h3>
                             </div>

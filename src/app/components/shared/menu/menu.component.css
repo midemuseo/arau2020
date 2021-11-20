@@ -5,3 +5,36 @@
     right: -40%;
     cursor: pointer;
 }
+
+a#menu-responsive{
+    background-color: #fff;
+    position: relative;
+    min-height: 79px;
+    z-index: 0;
+}
+
+.logo-r{
+    display: inline;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    z-index: -1;
+}
+.logo-color-hidden{
+    visibility: hidden;
+}
+.logo-color-visible{
+    visibility: visible;
+}
+
+@media(min-width:990px){
+    a#menu-responsive{
+        background: #fff!important;
+    }
+    .logo-d{
+        visibility: visible !important;
+    }
+}
+
