@@ -115,9 +115,12 @@
     height: 250px;
     display: table;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     position: relative;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    box-shadow: inset 2px 0px 3px rgb(0 0 0 / 30%), inset 0px 0px 0px rgb(255 255 255 / 20%)
 }
 
 .caja .header .titulo {
@@ -152,7 +155,7 @@
 }
 
 .caja .item .text {
-    color: #bdb2a5;
+    color: #3c3c3d;
     font-family: 'Barlow-Semibold';
     font-size: 16px;
 }
