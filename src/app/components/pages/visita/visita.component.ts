@@ -43,55 +43,52 @@ export class VisitaComponent implements OnInit {
       }
 
       public actividades : Array<any> = [{
-        titulo:'Recorrido Fotografías que nos conectan',
+        //titulo:'Recorrido Fotografías que nos conectan',
         texto:'Recorrido a través de la exposición que invitará a los visitantes a realizar conexiones emocionales, compartir vivencias, hilar narrativas y descubrir en las fotografías un espejo que muestra las diversas realidades que cada persona experimentó desde que se oficializó la pandemia en México.',
         dirigido:'Visitantes de la exposición 2020.',
-        urlImg:'assets/img/visita/recorrido-fotografias.jpg',
+        urlImg:'assets/img/visita/conectan.jpg',
         tiempo:40,
         participantes:10,
         fechas:null,
         horarios:'13:00 y 16:00 H.',
         ubicacion:'Trampantojo, Planta baja.',
-        logo:'assets/img/visita/recorrido.png',
         class:''
       },
       {
-        titulo:'Laboratorio de foto creativa',
+        //titulo:'Laboratorio de foto creativa',
         texto:'Taller que permitirá a los participantes descubrir algunas técnicas para crear diferentes filtros con objetos convencionales para explotar el potencial de la cámara de su celular, particularmente en retratos o autorretratos.',
         dirigido:'Jóvenes y adultos.',
-        urlImg:'assets/img/visita/laboratorio-foto-creativa.jpg',
+        urlImg:'assets/img/visita/laboratorio.jpg',
         tiempo:30,
         participantes:8,
         fechas:null,
         horarios:'13:00 y 16:00 H.',
         ubicacion:'Zona de talleres, Planta baja.',
-        logo:'assets/img/visita/laboratorio.png',
         class:'logo-lg'
       },
       {
-        titulo:'El MIDE desde el cielo: principios básicos de la fotografía aérea',
+        //titulo:'El MIDE desde el cielo: principios básicos de la fotografía aérea',
         texto:'Demostración realizada por los especialistas de Drones de México, expertos en la toma de fotografías aéreas, que permitirá a los participantes descubrir los principios de la fotografía aérea mediante una demostración con las cámaras y drones que se utilizan para realizarla.',
         dirigido:'Jóvenes y adultos.',
-        urlImg:'assets/img/visita/mide-desde-el-cielo.jpg',
+        urlImg:'assets/img/visita/cielo.jpg',
         tiempo:30,
         participantes:30,
         fechas:'7 de noviembre y 5 de diciembre de 2021, 16 de enero, 20 de febrero, 13 de marzo, 17 de abril y 8 de mayo de 2022.',
         horarios:'12:00 y 13:15 H.',
         ubicacion:'Patio principal.',
-        logo:'assets/img/visita/mide-desde-el-cielo.png',
+        boton: 'hola',
         class:''
       },
       {
-        titulo:'La fotografía a través del tiempo: taller de fotografía estereoscópica',
+        //titulo:'La fotografía a través del tiempo: taller de fotografía estereoscópica',
         texto:'Taller que invita a los participantes a experimentar la fotografía como se realizaba a finales del siglo XIX en el Fotoestudio Vergara y a explorar la fotografía tridimensional a través de un artefacto llamado estereoscopio.',
         dirigido:'Jóvenes y adultos.',
-        urlImg:'assets/img/visita/estereocopia.jpg',
+        urlImg:'assets/img/visita/tiempo.jpg',
         tiempo:45,
         participantes:8,
         fechas:null,
         horarios:'12:00 y 15:00 H.',
         ubicacion:'Zona de talleres, Planta baja.',
-        logo:'assets/img/visita/foto-atraves-del-tiempo.png',
         class:''
       }
     ];
